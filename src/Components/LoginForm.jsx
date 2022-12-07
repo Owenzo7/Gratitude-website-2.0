@@ -12,7 +12,17 @@ import {
   }
   from 'mdb-react-ui-kit';
 
+import { useNavigate } from 'react-router-dom';
+
 function LoginForm() {
+
+  const navigate = useNavigate();
+
+
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate('/Home');
+  };
   return (
     <MDBContainer fluid className='p-4'>
 
@@ -49,7 +59,7 @@ function LoginForm() {
 
              
 
-              <MDBBtn className='w-100 mb-4' size='md'>Log in</MDBBtn>
+              <MDBBtn onClick={navigateHome} className='w-100 mb-4' size='md'>Log in</MDBBtn>
 
               <div className="text-center">
 
