@@ -1,12 +1,12 @@
 import React from 'react'
-import RegisterFooter from '../Components/RegisterFooter'
+import Footer from '../Components/Footer'
 import RegisterForm from '../Components/RegisterForm'
 
 function Register() {
   return (
     <div>
         <RegisterForm />
-        <RegisterFooter />
+        <Footer />
     </div>
   )
 }

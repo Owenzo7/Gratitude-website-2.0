@@ -1,8 +1,13 @@
 import React from 'react'
+import LoginForm from '../Components/LoginForm'
+import Footer from '../Components/Footer'
 
 function Login() {
   return (
-    <div>Login</div>
+    <div>
+    <LoginForm />
+    <Footer />
+    </div>
   )
 }
 

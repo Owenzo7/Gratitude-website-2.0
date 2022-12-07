@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
     MDBBtn,
     MDBContainer,
@@ -12,7 +12,7 @@ import {
   }
   from 'mdb-react-ui-kit';
 
-function RegisterForm() {
+function LoginForm() {
   return (
     <MDBContainer fluid className='p-4'>
 
@@ -23,13 +23,13 @@ function RegisterForm() {
           <h1 className="my-5 display-3 fw-bold ls-tight px-3">
             Gratitude <br />
             
-            <span className="text-primary">Let's get started</span>
+            <span className="text-primary">Already a Member?</span>
           </h1>
 
 
 
           <p className='px-3' style={{color: 'hsl(217, 10%, 50.8%)'}}>
-            Welcome to the world of Opportunities. Create Account to get started
+            Log in to your account so that you may join the world of opportunities!
           </p>
 
         </MDBCol>
@@ -39,26 +39,21 @@ function RegisterForm() {
           <MDBCard className='my-5'>
             <MDBCardBody className='p-5'>
 
-              <MDBRow>
-                <MDBCol col='6'>
-                  <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text'/>
-                </MDBCol>
+              
 
-                <MDBCol col='6'>
-                  <MDBInput wrapperClass='mb-4' label='Last name' id='form1' type='text'/>
-                </MDBCol>
-              </MDBRow>
+                
 
               <MDBInput wrapperClass='mb-4'autoComplete="off" label='Email' id='form1' type='email'/>
               <MDBInput wrapperClass='mb-4' autoComplete="off" label='Password' id='form1' type='password'/>
+              <MDBInput wrapperClass='mb-4' autoComplete="off" label='Confirm Password' id='form1' type='password'/>
 
              
 
-              <MDBBtn className='w-100 mb-4' size='md'>sign up</MDBBtn>
+              <MDBBtn className='w-100 mb-4' size='md'>Log in</MDBBtn>
 
               <div className="text-center">
 
-                <p>or sign up with:</p>
+                <p>or Log in with:</p>
 
                 <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
                   <MDBIcon fab icon='facebook-f' size="sm"/>
@@ -86,9 +81,7 @@ function RegisterForm() {
       </MDBRow>
 
     </MDBContainer>
-
-    
-  );
+  )
 }
 
-export default RegisterForm;
+export default LoginForm
