@@ -4,10 +4,10 @@ import HomeNav from '../Components/HomeNav'
 function Home() {
   return (
     
-    <div>
+    <>
       <HomeNav />
 
-    </div>
+    </>
   )
 }
 
